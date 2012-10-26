@@ -1,0 +1,7 @@
+{% extends "VehicleManagementManagementBundle::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Edit {{ managementType }}{% endblock %}
+
+{% block management_body %}
+	{% include "VehicleManagementManagementBundle::form.html.twig" %}
+{% endblock %}

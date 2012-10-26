@@ -1,0 +1,68 @@
+######### REFUEL #########
+VehicleManagementManagementBundle_refuel:
+    pattern:  /refuel/{page}
+    defaults: { _controller: VehicleManagementManagementBundle:Refuel:index, page: 1 }
+    requirements:
+        page: \d*
+
+VehicleManagementManagementBundle_refuel_edit:
+    pattern:  /refuel/edit/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Refuel:edit}
+    requirements:
+        id: \d*        
+
+VehicleManagementManagementBundle_refuel_add:
+    pattern:  /refuel/add
+    defaults: { _controller: VehicleManagementManagementBundle:Refuel:add }
+    
+VehicleManagementManagementBundle_refuel_delete:
+    pattern:  /refuel/delete/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Refuel:delete}
+    requirements:
+        id: \d*
+
+ ######### VEHICLE #########       
+VehicleManagementManagementBundle_vehicle:
+    pattern:  /vehicle/{page}
+    defaults: { _controller: VehicleManagementManagementBundle:Vehicle:index, page: 1 }
+    requirements:
+        page: \d*
+        
+VehicleManagementManagementBundle_vehicle_edit:
+    pattern:  /vehicle/edit/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Vehicle:edit}
+    requirements:
+        id: \d*
+        
+VehicleManagementManagementBundle_vehicle_add:
+    pattern:  /vehicle/add
+    defaults: { _controller: VehicleManagementManagementBundle:Vehicle:add }
+    
+VehicleManagementManagementBundle_vehicle_delete:
+    pattern:  /vehicle/delete/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Vehicle:delete}
+    requirements:
+        id: \d*
+        
+ ######### SERVICING #########       
+VehicleManagementManagementBundle_servicing:
+    pattern:  /servicing/{page}
+    defaults: { _controller: VehicleManagementManagementBundle:Servicing:index, page: 1 }
+    requirements:
+        page: \d*
+
+VehicleManagementManagementBundle_servicing_edit:
+    pattern:  /servicing/edit/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Servicing:edit}
+    requirements:
+        id: \d*
+
+VehicleManagementManagementBundle_servicing_add:
+    pattern:  /servicing/add
+    defaults: { _controller: VehicleManagementManagementBundle:Servicing:add }
+    
+VehicleManagementManagementBundle_servicing_delete:
+    pattern:  /servicing/delete/{id}
+    defaults: { _controller: VehicleManagementManagementBundle:Servicing:delete}
+    requirements:
+        id: \d*               

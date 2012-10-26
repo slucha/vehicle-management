@@ -1,0 +1,11 @@
+parameters:
+#    vehicle_management_management.example.class: VehicleManagement\ManagementBundle\Example
+
+services:
+    vehiclemanagement.twig.vehiclemanagement_extension:
+        class: VehicleManagement\ManagementBundle\Twig\VehicleManagementExtension
+        tags:
+            - { name: twig.extension }
+#    vehicle_management_management.example:
+#        class: %vehicle_management_management.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

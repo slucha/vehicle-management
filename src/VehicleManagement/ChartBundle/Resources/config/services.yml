@@ -1,0 +1,7 @@
+parameters:
+#    vehicle_management_chart.example.class: VehicleManagement\ChartBundle\Example
+
+services:
+#    vehicle_management_chart.example:
+#        class: %vehicle_management_chart.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

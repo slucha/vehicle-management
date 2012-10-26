@@ -1,0 +1,9 @@
+VehicleManagementChartBundle_main:
+    pattern:  /
+    defaults: { _controller: VehicleManagementChartBundle:Main:index }
+
+VehicleManagementChartBundle_data_retrieve:
+    pattern:  /data/retrieve/{year}
+    defaults: { _controller: VehicleManagementChartBundle:Data:retrieve}
+    requirements:
+        id: \d{4}

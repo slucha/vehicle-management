@@ -1,0 +1,5 @@
+<data>
+{%  for r in res %}
+	<amount month="{{ r.date|date("m") }}">{{ r.price }}</amount>
+{% endfor %}
+</data>
